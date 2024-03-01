@@ -9,9 +9,5 @@ public interface MakeMyTripService {
 	public Ticket bookTicket(Passenger passenger);
 
 	public Ticket getTicketByNum(Integer ticketNum);
-	
-	
-	
-		System.out.println("uday wagh");
 
 }

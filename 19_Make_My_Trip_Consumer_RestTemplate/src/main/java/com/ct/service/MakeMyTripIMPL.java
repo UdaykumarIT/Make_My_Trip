@@ -19,10 +19,6 @@ public class MakeMyTripIMPL implements MakeMyTripService {
 		RestTemplate rt = new RestTemplate();
 		ResponseEntity<Ticket> resEntity = rt.postForEntity(BOOK_TICKET_URL, passenger, Ticket.class);
 
-
-		System.out.println("uday");
-
-
 		Ticket ticket = resEntity.getBody();
 
 		return ticket;
